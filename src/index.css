@@ -1,0 +1,32 @@
+/* @import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes:themes: light --default;
+}
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #632EE3;
+  --color-secondary: teal;
+} */
+
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+
+  --color-primary: #9f62f2;
+  --color-secondary: teal;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #632ee3, #9f62f2);
+  color: white;
+  border: none;
+}
