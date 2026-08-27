@@ -6,6 +6,7 @@ import { data } from "react-router";
 const Mybids = () => {
   const { user } = use(AuthContext);
   const [bids, setBids] = useState([]);
+
   useEffect(() => {
     if (user?.email) {
       fetch(`http://localhost:3000/bids?email=${user.email}`, {
