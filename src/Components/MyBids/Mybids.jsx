@@ -6,6 +6,7 @@ import { data } from "react-router";
 const Mybids = () => {
   const { user } = use(AuthContext);
   const [bids, setBids] = useState([]);
+  // latapata1952@gmail.com
 
   useEffect(() => {
     if (user?.email) {
